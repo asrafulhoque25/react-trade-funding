@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section className='main-banner'>
       <div className="container m-auto">
-        <div className="grid grid-cols-2 gap-4 items-center py-[100px]">
+        <div className="grid grid-cols-2 gap-4 items-center pt-[170px]">
           <div className='bannerContent'>
             <h1 className='text-[56px] text-dark-dark-1 font-normal leading-[66px] mb-6'>
               Unlock cash flow & improve how your business transacts.
@@ -19,8 +19,8 @@ const Banner = () => {
               <CheckList  />
               <Button />
           </div>
-          <div className='bannerImage ps-20'>
-            <img className='max-w-[650px] h-auto' src={BannerImg} alt="banner img" />
+          <div className='bannerImage ms-auto'>
+            <img className='max-w-100 h-auto' src={BannerImg} alt="banner img" />
           </div>
         </div>
       </div>
