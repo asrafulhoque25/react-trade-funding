@@ -39,7 +39,7 @@ const Navbar = () => {
 
    <div>
    <Topnavbar />
-     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 py-5">
+     <header className="w-full bg-white md:bg-transparent fixed top-10 left-0 right-0 py-5">
    <div className="container mx-auto">
    <nav>
         <div className="flex space-x-5 justify-between items-center">
