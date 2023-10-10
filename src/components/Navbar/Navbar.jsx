@@ -3,6 +3,7 @@ import logo from "/assets/img/logo.svg";
 import bar from "/assets/img/bar.svg";
 import arrow_down from "/assets/img/arrow_down.svg";
 import './Navbar.css'
+import Topnavbar from "./Topnavbar";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -32,7 +33,9 @@ const Navbar = () => {
   //     {link:"Home",path:"home"}
   // ]
   return (
-    <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 py-5">
+   <div>
+   <Topnavbar />
+     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 py-5">
    <div className="container mx-auto">
    <nav>
         <div className="flex space-x-5 justify-between items-center">
@@ -74,6 +77,7 @@ const Navbar = () => {
       </nav>
    </div>
     </header>
+   </div>
   );
 };
 
