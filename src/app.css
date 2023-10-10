@@ -17,6 +17,7 @@ body{
     @media (min-width: 1600px) {
         max-width: 1470px;
         padding: 0 15px;
+        margin: auto;
     }
 }
 
