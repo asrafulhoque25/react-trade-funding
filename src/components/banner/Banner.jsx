@@ -7,18 +7,18 @@ const Banner = () => {
   return (
     <section className='main-banner'>
       <div className="container m-auto">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 items-center py-[50px]">
           <div className='bannerContent'>
-              <h1>
+            <h1 className='text-[56px] text-dark-dark-1 font-normal leading-[66px] mb-6'>
               Unlock cash flow & improve how your business transacts.
               </h1>
-              <p>
+            <p className='text-dark-dark-2 text-[20px] font-bold mb-6'>
               The preferred partner to businesses who want to Grow and Save
               </p>
               <CheckList  />
           </div>
-          <div className='bannerImage'>
-            <img src={BannerImg} alt="banner img" />
+          <div className='bannerImage ps-20'>
+            <img className='mw-100 h-auto' src={BannerImg} alt="banner img" />
           </div>
         </div>
       </div>
