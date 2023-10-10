@@ -10,9 +10,10 @@ export default {
         "dark-dark-1":"#001B44",
         "dark-dark-2":"#4B5768",
         "ascent-1":"#FF5E5A",
-        "ascent-3":"#45D3DD",
+        "ascent-3":"#DAF6F8",
         "secondary-main":"#FFB966",
         "primary-main":"#0067FF",
+        "primary-main2":"#1252B0",
       },
       fontSize: {
         base: '16px',
