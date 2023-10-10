@@ -72,8 +72,8 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex space-x-5 items-center">
-            <a href="#" className="px-3 py-1 log-in border-dark-dark-1 border transition-all hover:bg-secondary-main hover:border-secondary-main">Login</a>
-            <a href="#" className="px-3 py-1 log-in border-secondary-main border bg-secondary-main transition-all hover:border-dark-dark-1 hover:bg-transparent ">Join</a>
+            <a href="#" className="px-3 py-1 text-base font-bold text-dark-dark-1 border-dark-dark-1 border transition-all hover:bg-secondary-main hover:border-secondary-main">Login</a>
+            <a href="#" className="px-3 py-1 text-base font-bold text-dark-dark-1 border-secondary-main border bg-secondary-main transition-all hover:border-dark-dark-1 hover:bg-transparent ">Join</a>
             <a href="#">
                 <img src={bar} alt="" />
             </a>
