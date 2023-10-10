@@ -20,7 +20,7 @@ const CheckList = () => {
 
   return (
     <div className='checkList'>
-      <ul className='mb-6'>
+      <ul className='pb-9'>
         {
           checkListData.map((checkList, index) =>
             <li key={index} className='flex gap-2 mb-1'>
