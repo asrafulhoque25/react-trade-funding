@@ -10,6 +10,7 @@ export default {
         "dark-dark-1":"#001B44",
         "dark-dark-2":"#4B5768",
         "ascent-1":"#FF5E5A",
+        "ascent-3":"#45D3DD",
         "secondary-main":"#FFB966",
         "primary-main":"#0067FF",
       },
