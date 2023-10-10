@@ -1,9 +1,12 @@
-import React, { useEffect, useState, Fragment, useRef } from "react";
-import logo from "/assets/img/logo.svg";
-import bar from "/assets/img/bar.svg";
+
+import { useEffect, useState } from 'react';
+import './Navbar.css';
 import arrow_down from "/assets/img/arrow_down.svg";
 import './Navbar.css'
 import Topnavbar from "./Topnavbar";
+
+import bar from "/assets/img/bar.svg";
+import logo from '/assets/img/logo.svg';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -33,6 +36,7 @@ const Navbar = () => {
   //     {link:"Home",path:"home"}
   // ]
   return (
+
    <div>
    <Topnavbar />
      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 py-5">
@@ -78,6 +82,8 @@ const Navbar = () => {
    </div>
     </header>
    </div>
+
+
   );
 };
 
