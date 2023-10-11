@@ -1,6 +1,8 @@
 import './app.css';
 import Navbar from './components/Navbar/Navbar';
 import Banner from './components/banner/Banner';
+import Blogs from './components/blogs/Blogs';
+import Brand from './components/brand/Brand';
 import CommonFeature from './components/commonFeature/CommonFeature';
 import CommonHeader from './components/commonHeader/CommonHeader';
 import GrowSave from './components/growandsave/GrowSave';
@@ -20,6 +22,13 @@ function App() {
         />
       } />
       <Testimonial />
+      <Blogs SectionHeader={
+        <CommonHeader
+          SectionTitle='Let us help you take your business to the next level!'
+          addClass={""}
+        />
+      } />
+      <Brand />
     </>
   );
 }

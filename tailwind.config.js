@@ -23,6 +23,7 @@ export default {
         "secondary-main":"#FFB966",
         "primary-main":"#0067FF",
         "primary-main2":"#1252B0",
+        "primary-main-light":"#E5EFFE",
       },
       fontSize: {
         base: '16px',
