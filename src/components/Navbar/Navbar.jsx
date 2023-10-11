@@ -1,12 +1,11 @@
-
-import { useEffect, useState } from 'react';
-import './Navbar.css';
+import { useEffect, useState } from "react";
+import "./Navbar.css";
 import arrow_down from "/assets/img/arrow_down.svg";
-import './Navbar.css'
+import "./Navbar.css";
 import Topnavbar from "./Topnavbar";
 
 import bar from "/assets/img/bar.svg";
-import logo from '/assets/img/logo.svg';
+import logo from "/assets/img/logo.svg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -36,55 +35,84 @@ const Navbar = () => {
   //     {link:"Home",path:"home"}
   // ]
   return (
-
-   <div>
-   
-     <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 ">
-     <Topnavbar />
-   <div className="container mx-auto">
-   <nav>
-        <div className="flex space-x-5 justify-between items-center py-6">
-          <a href="#">
-            <img src={logo} alt="" />
-          </a>
-          <ul className="flex space-x-11 items-center">
-            <li>
-              <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold">Home</a>
-            </li>
-            <li>
-              <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold">About</a>
-            </li>
-            <li className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer" onClick={toggleDropdown} >
-              Products <span className=" inline-flex ps-1"><img src={arrow_down} alt="" /></span>
-              {showDropdown && (
-                <ul className="dropdown-content">
-                  <li>Service 1</li>
-                  <li>Service 2</li>
-                  <li>Service 3</li>
-                </ul>
-              )}
-            </li>
-            <li>
-              <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold">Partners</a>
-            </li>
-            <li>
-              <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold">Blog</a>
-            </li>
-          </ul>
-          <div className="flex space-x-5 items-center">
-            <a href="#" className="px-3 py-1 text-base font-bold text-dark-dark-1 border-dark-dark-1 border transition-all hover:bg-secondary-main hover:border-secondary-main">Login</a>
-            <a href="#" className="px-3 py-1 text-base font-bold text-dark-dark-1 border-secondary-main border bg-secondary-main transition-all hover:border-dark-dark-1 hover:bg-transparent ">Join</a>
-            <a href="#">
-                <img src={bar} alt="" />
-            </a>
-          </div>
+    <div>
+      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 ">
+        <Topnavbar />
+        <div className="container mx-auto">
+          <nav>
+            <div className="flex space-x-5 justify-between items-center py-6">
+              <a href="#">
+                <img src={logo} alt="" />
+              </a>
+              <ul className="flex space-x-11 items-center">
+                <li>
+                  <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold" >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
+                  >
+                    About
+                  </a>
+                </li>
+                <li
+                  className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer"
+                  onClick={toggleDropdown}
+                >
+                  Products{" "}
+                  <span className=" inline-flex ps-1">
+                    <img src={arrow_down} alt="" />
+                  </span>
+                  {showDropdown && (
+                    <ul className="dropdown-content">
+                      <li>Service 1</li>
+                      <li>Service 2</li>
+                      <li>Service 3</li>
+                    </ul>
+                  )}
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
+                  >
+                    Partners
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
+                  >
+                    Blog
+                  </a>
+                </li>
+              </ul>
+              <div className="flex space-x-5 items-center">
+                <a
+                  href="#"
+                  className="px-3 py-1 text-base font-bold text-dark-dark-1 border-dark-dark-1 border transition-all hover:bg-secondary-main hover:border-secondary-main"
+                >
+                  Login
+                </a>
+                <a
+                  href="#"
+                  className="px-3 py-1 text-base font-bold text-dark-dark-1 border-secondary-main border bg-secondary-main transition-all hover:border-dark-dark-1 hover:bg-transparent "
+                >
+                  Join
+                </a>
+                <a href="#">
+                  <img src={bar} alt="" />
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-   </div>
-    </header>
-   </div>
-
-
+      </header>
+    </div>
   );
 };
 
