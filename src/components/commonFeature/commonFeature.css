@@ -1,0 +1,13 @@
+body {
+  counter-reset: my-sec-counter;
+}
+
+.featured-count::before {
+  counter-increment: my-sec-counter;
+  content: "0" counter(my-sec-counter) "";
+
+  color: #E5E8ED;
+  font-size: 128px;
+  font-weight: 300;
+  line-height: normal
+}

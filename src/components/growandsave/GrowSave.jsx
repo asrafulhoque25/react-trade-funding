@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import backgroundImage from '/assets/img/growandsave.png';
 const GrowSave = () => {
     const styles = {
