@@ -1,9 +1,12 @@
 
+
 import { Tab } from "@headlessui/react";
+
 import React, { useState } from "react";
 import grow2 from "/assets/img/grow2.svg";
 import grow3 from "/assets/img/grow3.svg";
 import grow4 from "/assets/img/grow4.svg";
+
 import backgroundImage from "/assets/img/growandsave.png";
 import loan from "/assets/img/loan.svg";
 
@@ -86,11 +89,11 @@ const GrowSave = () => {
                   key={category}
                   className={({ selected }) =>
                     classNames(
-                      "w-full py-2.5 text-sm font-medium ",
+                      "w-full py-2.5 text-sm font-medium border-0",
                       "",
                       selected
-                        ? "bg-primary-main text-white shadow text-base font-bold rounded-xl"
-                        : "text-dark-dark-3 text-base font-bold"
+                        ? "bg-primary-main text-white shadow text-base font-bold rounded-xl border-0"
+                        : "text-dark-dark-3 text-base font-bold border-0"
                     )
                   }
                 >

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
-import arrow_down from "/assets/img/arrow_down.svg";
-import "./Navbar.css";
 import Topnavbar from "./Topnavbar";
+import arrow_down from "/assets/img/arrow_down.svg";
 
 import bar from "/assets/img/bar.svg";
 import logo from "/assets/img/logo.svg";
@@ -36,7 +35,7 @@ const Navbar = () => {
   // ]
   return (
     <div>
-      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 ">
+      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 z-50">
         <Topnavbar />
         <div className="container mx-auto">
           <nav>
