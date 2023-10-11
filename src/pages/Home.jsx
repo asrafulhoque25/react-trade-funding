@@ -5,6 +5,7 @@ import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
 import CommonFeature from '../components/commonFeature/CommonFeature';
 import CommonHeader from '../components/commonHeader/CommonHeader';
+import Footer from '../components/footer/Footer';
 import GrowSave from '../components/growandsave/GrowSave';
 import Testimonial from '../components/testimonial/Testimonial';
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
         />
       } />
       <Brand />
+      <Footer />
     </>
     </div>
   )
