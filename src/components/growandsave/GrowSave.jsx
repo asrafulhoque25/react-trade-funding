@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState } from "react";
 import backgroundImage from "/assets/img/growandsave.png";
 import loan from "/assets/img/loan.svg";
@@ -6,15 +6,6 @@ import grow2 from "/assets/img/grow2.svg";
 import grow3 from "/assets/img/grow3.svg";
 import grow4 from "/assets/img/grow4.svg";
 import { Tab } from "@headlessui/react";
-=======
-<<<<<<< HEAD
-import React from 'react';
-=======
-import React, { useState } from 'react'
->>>>>>> 6eab125a3a03a4b23a213e8eeb80ee7179009a93
-import backgroundImage from '/assets/img/growandsave.png';
-import { Tab } from '@headlessui/react'
->>>>>>> bf33ef14930def0f0584f1a5b2dc4049d71ba80c
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -93,11 +84,11 @@ const GrowSave = () => {
                   key={category}
                   className={({ selected }) =>
                     classNames(
-                      "w-full py-2.5 text-sm font-medium ",
+                      "w-full py-2.5 text-sm font-medium border-0",
                       "",
                       selected
-                        ? "bg-primary-main text-white shadow text-base font-bold rounded-xl"
-                        : "text-dark-dark-3 text-base font-bold"
+                        ? "bg-primary-main text-white shadow text-base font-bold rounded-xl border-0"
+                        : "text-dark-dark-3 text-base font-bold border-0"
                     )
                   }
                 >
