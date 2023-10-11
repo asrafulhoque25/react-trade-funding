@@ -24,6 +24,7 @@ export default {
         "primary-main":"#0067FF",
         "primary-main2":"#1252B0",
         "primary-main-light":"#E5EFFE",
+        "primary-white":"#334969",
       },
       fontSize: {
         base: '16px',
