@@ -11,3 +11,11 @@ body {
   font-weight: 300;
   line-height: normal
 }
+
+.featured-wrapper:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.featured-wrapper:last-child {
+  padding-bottom: 0;
+}
