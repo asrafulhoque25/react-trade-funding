@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from '/public/assets/img/growandsave.png';
+import backgroundImage from '/assets/img/growandsave.png';
 const GrowSave = () => {
     const styles = {
         backgroundImage: `url(${backgroundImage})`,
