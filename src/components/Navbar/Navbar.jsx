@@ -39,7 +39,7 @@ const Navbar = () => {
 
    <div>
    
-     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 ">
+     <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 ">
      <Topnavbar />
    <div className="container mx-auto">
    <nav>

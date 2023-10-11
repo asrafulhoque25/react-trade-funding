@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '15px',
+    },
     extend: {
       colors: {
         "dark-dark-1":"#001B44",

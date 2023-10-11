@@ -14,10 +14,13 @@ body{
 }
 
 .container {
+    padding: 0 15px;
     @media (min-width: 1600px) {
-        max-width: 1470px;
-        padding: 0 15px;
+        max-width: 1470px !important;
         margin: auto;
     }
 }
 
+.section-padding{
+    padding: 100px 0;
+}
