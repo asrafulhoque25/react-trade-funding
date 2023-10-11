@@ -24,3 +24,17 @@ body{
 .section-padding{
     padding: 100px 0;
 }
+
+.construction{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.construction h2{
+color: #001B44;
+font-size: 96px;
+font-weight: 600;
+}

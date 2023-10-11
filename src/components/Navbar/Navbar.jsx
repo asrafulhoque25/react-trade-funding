@@ -3,8 +3,10 @@ import "./Navbar.css";
 import Topnavbar from "./Topnavbar";
 import arrow_down from "/assets/img/arrow_down.svg";
 
+
 import bar from "/assets/img/bar.svg";
 import logo from "/assets/img/logo.svg";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -45,17 +47,16 @@ const Navbar = () => {
               </a>
               <ul className="flex space-x-11 items-center">
                 <li>
-                  <a href="#" className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold" >
+                  <Link to={"/"} className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold" >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to={"/about"}
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li
                   className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer"
@@ -74,20 +75,20 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <a
+                  <Link  to={"/partners"}
                     href="#"
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
                   >
                     Partners
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link to={"/blog"}
                     href="#"
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="flex space-x-5 items-center">
