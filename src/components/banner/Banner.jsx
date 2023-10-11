@@ -23,6 +23,13 @@ const Banner = () => {
             <img className='max-w-100 h-auto' src={BannerImg} alt="banner img" />
           </div>
         </div>
+
+        <div className="ourAchieved">
+          <div className="achieved">
+            <h5 className='text-dark-dark-1 text-[24px] font-normal'>98K+</h5>
+            <p className='text-dark-dark-3 text-[14px] font-normal'>Businesses network</p>
+          </div>
+        </div>
       </div>
     </section>
   );

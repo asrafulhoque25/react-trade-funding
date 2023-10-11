@@ -9,6 +9,7 @@ export default {
       colors: {
         "dark-dark-1":"#001B44",
         "dark-dark-2":"#4B5768",
+        "dark-dark-3":"#5D6878",
         "ascent-1":"#FF5E5A",
         "ascent-3":"#DAF6F8",
         "secondary-main":"#FFB966",
