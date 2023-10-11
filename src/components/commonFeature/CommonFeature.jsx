@@ -5,6 +5,7 @@ import featuredImg2 from '/assets/img/featuredImg2.png';
 import featuredImg3 from '/assets/img/featuredImg3.png';
 import featuredImg4 from '/assets/img/featuredImg4.png';
 
+import Button from '../buttons/Button';
 import './commonFeature.css';
 
 const CommonFeature = ({ SectionHeader }) => {
@@ -32,7 +33,8 @@ const CommonFeature = ({ SectionHeader }) => {
       id: 4,
       FeatureImg: featuredImg4,
       featuredTitle: "With you on the journey! ",
-      featuredIntro: "Continuous business monitoring unlike most providers who will give you a product and never speak with you again, we are with you on the journey. Continuing to explore opportunities where we can support your Growth and cut costs to Save you time and money."
+      featuredIntro: "Continuous business monitoring unlike most providers who will give you a product and never speak with you again, we are with you on the journey. Continuing to explore opportunities where we can support your Growth and cut costs to Save you time and money.",
+      btn: <Button />
     },
   ]
 
@@ -56,6 +58,10 @@ const CommonFeature = ({ SectionHeader }) => {
                 <p className='featured-intro text-dark-dark-3 text-[24px] font-light'>
                   {data.featuredIntro}
                 </p>
+
+                <div className='featured-btn mt-10 text-dark-dark-3 text-[24px] font-light'>
+                  {data.btn}
+                </div>
               </div>
             </div>
 
