@@ -1,4 +1,5 @@
 
+import { homeFeatureData } from '../Data';
 import Navbar from '../components/Navbar/Navbar';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
@@ -15,7 +16,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <GrowSave />
-      <CommonFeature SectionHeader={
+      <CommonFeature sectionCls = "featured-wrapper" featureData={homeFeatureData} SectionHeader={
         <CommonHeader
           SectionTitle='Dedicated support to help you achieve!'
           addClass={""}

@@ -16,6 +16,18 @@ body {
   flex-direction: row-reverse;
 }
 
+.aboutFeatureWrapper:last-child {
+  padding-bottom: 0px !important;
+}
+
 .featured-wrapper:last-child {
   padding-bottom: 0;
+}
+
+.aboutFeatureWrapper:nth-child(even) {
+  flex-direction: row-reverse !important;
+}
+
+.common-feature-wrapper:last-child {
+  padding-bottom: 0px !important;
 }

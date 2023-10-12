@@ -1,0 +1,14 @@
+.video-section{
+    width: 100%;
+    position: relative;
+}
+.play-button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    
+}
+.play-button img{
+width: 142px;
+}

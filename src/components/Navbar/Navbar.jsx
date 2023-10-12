@@ -60,8 +60,7 @@ const Navbar = () => {
                 </li>
                 <li
                   className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer"
-                  onClick={toggleDropdown}
-                >
+                  onClick={toggleDropdown} >
                   Products{" "}
                   <span className=" inline-flex ps-1">
                     <img src={arrow_down} alt="" />
@@ -112,6 +111,10 @@ const Navbar = () => {
           </nav>
         </div>
       </header>
+
+      <div className="mt-28 dropdown-main-wrap max-w-[746px] w-full px-[40px] pt-[20px] pb-[30px]">
+       <h3>lsakdfjalsdkjflkj</h3>
+      </div>
     </div>
   );
 };
