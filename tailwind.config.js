@@ -12,6 +12,8 @@ export default {
     extend: {
       boxShadow: {
         'black_sw': '0px 30px 60px 0px rgba(0, 50, 126, 0.10);',
+        'md': '0px 30px 60px 0px rgba(0, 50, 126, 0.10);',
+        '3xl': '0 30px 60px 0 rgba(0, 50, 126, 0.10)',
       },
       colors: {
         "dark-dark-1":"#001B44",

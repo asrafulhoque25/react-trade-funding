@@ -12,7 +12,7 @@ body {
   line-height: normal
 }
 
-.featured-wrapper:nth-child(odd) {
+.featured-wrapper:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -24,7 +24,7 @@ body {
   padding-bottom: 0;
 }
 
-.aboutFeatureWrapper:nth-child(even) {
+.aboutFeatureWrapper:nth-child(odd) {
   flex-direction: row-reverse !important;
 }
 

@@ -1,12 +1,17 @@
 import Button from './components/buttons/Button';
-import featuredImg1 from '/assets/img/featuredImg1.png';
-import featuredImg2 from '/assets/img/featuredImg2.png';
-import featuredImg3 from '/assets/img/featuredImg3.png';
-import featuredImg4 from '/assets/img/featuredImg4.png';
 import aboutfeature1 from '/assets/img/aboutfeature1.svg';
 import aboutfeature2 from '/assets/img/aboutfeature2.svg';
 import aboutfeature3 from '/assets/img/aboutfeature3.svg';
 import aboutfeature4 from '/assets/img/aboutfeature4.svg';
+import featuredImg1 from '/assets/img/featuredImg1.png';
+import featuredImg2 from '/assets/img/featuredImg2.png';
+import featuredImg3 from '/assets/img/featuredImg3.png';
+import featuredImg4 from '/assets/img/featuredImg4.png';
+
+import partnerFeature1 from '/assets/img/partner-feature1.png';
+import partnerFeature2 from '/assets/img/partner-feature2.png';
+import partnerFeature3 from '/assets/img/partner-feature3.png';
+import partnerFeature4 from '/assets/img/partner-feature4.png';
 
 
 
@@ -66,3 +71,33 @@ export const aboutFeatureData = [
    
     },
   ]
+
+
+
+export const partnerFeatureData = [
+  {
+    id: 1,
+    FeatureImg: partnerFeature1,
+    featuredTitle: "Partner and see the magic",
+    featuredIntro: "Partner with one of the worlds most diversified financial services marketplaces for SME businesses and offer your customers  a consolidated financial services platform. Trade Funding has sourced the best products available across lending and payments to drive growth and cut costs in our customer businesses."
+  },
+  {
+    id: 2,
+    FeatureImg: partnerFeature2,
+    featuredTitle: "Provide a simple process",
+    featuredIntro: "Trade Funding delivers a best-in-class experience to partners and customers. With a completely hands off process for you, we take all the work out of solving financial services problems for your customers on your behalf."
+  },
+  {
+    id: 3,
+    FeatureImg: partnerFeature3,
+    featuredTitle: "To be integrated",
+    featuredIntro: "Reach new customers with co-branded materials, and be rewarded for every successful client you refer to Trade Funding."
+  },
+  {
+    id: 4,
+    FeatureImg: partnerFeature4,
+    featuredTitle: "Grow your business",
+    featuredIntro: "Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Id consectetur purus",
+
+  },
+]

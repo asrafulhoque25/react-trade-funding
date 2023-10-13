@@ -12,27 +12,30 @@ import Testimonial from '../components/testimonial/Testimonial';
 const Home = () => {
   return (
     <div>
-          <>
-      <Navbar />
-      <Banner />
-      <GrowSave />
-      <CommonFeature sectionCls = "featured-wrapper" featureData={homeFeatureData} SectionHeader={
-        <CommonHeader
-          SectionTitle='Dedicated support to help you achieve!'
-          addClass={""}
-          SectionIntro={"Have you ever taken a product and thought there was most likely a better solution for your business? It's easy to do when there are sooo many options!"}
+      <>
+        <Navbar />
+        <Banner />
+        <GrowSave />
+        <CommonFeature sectionCls="featured-wrapper" featureData={homeFeatureData} isSecHeader={true} SectionHeader={
+          <CommonHeader
+            SectionTitle='Dedicated support to help you achieve!'
+            addClass={""}
+            SectionIntro={"Have you ever taken a product and thought there was most likely a better solution for your business? It's easy to do when there are sooo many options!"}
+          />
+        } />
+        <Testimonial />
+        <Blogs SectionHeader={
+          <CommonHeader
+            SectionTitle='Let us help you take your business to the next level!'
+            addClass={""}
+          />
+        } />
+        <Brand
+          containerClass={'container'}
+          rowClass={'gap-6 justify-center lg:justify-between'}
         />
-      } />
-      <Testimonial />
-      <Blogs SectionHeader={
-        <CommonHeader
-          SectionTitle='Let us help you take your business to the next level!'
-          addClass={""}
-        />
-      } />
-      <Brand />
-      <Footer />
-    </>
+        <Footer />
+      </>
     </div>
   )
 }

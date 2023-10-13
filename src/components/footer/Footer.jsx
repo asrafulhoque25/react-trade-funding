@@ -7,7 +7,7 @@ import Location from '/assets/img/location.svg';
 
 const Footer = () => {
   return (
-    <footer className='footer' style={{ backgroundImage: `url(${FooterBg})` }}>
+    <footer className='footer' style={{ backgroundImage: `url(${FooterBg})`, backgroundSize: 'cover' }}>
       <div className="container">
         <div className="footer-widget-area sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 pt-[120px] pb-[60px]">
           <div className="footer-widget mb-8 lg:mb-0">

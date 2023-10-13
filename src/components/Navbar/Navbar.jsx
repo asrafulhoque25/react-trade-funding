@@ -4,9 +4,9 @@ import Topnavbar from "./Topnavbar";
 import arrow_down from "/assets/img/arrow_down.svg";
 
 
+import { Link } from "react-router-dom";
 import bar from "/assets/img/bar.svg";
 import logo from "/assets/img/logo.svg";
-import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -113,7 +113,7 @@ const Navbar = () => {
       </header>
 
       <div className="mt-28 dropdown-main-wrap max-w-[746px] w-full px-[40px] pt-[20px] pb-[30px]">
-       <h3>lsakdfjalsdkjflkj</h3>
+       {/* <h3>lsakdfjalsdkjflkj</h3> */}
       </div>
     </div>
   );
