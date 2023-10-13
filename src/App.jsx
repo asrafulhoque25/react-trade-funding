@@ -1,9 +1,10 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './app.css';
 import About from './pages/About';
-import Home from './pages/Home';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Partners from './pages/Partners';
 import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Partners from './pages/Partners';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={ <About /> }/>
         <Route path="/partners" element={ <Partners /> }/>
         <Route path="/blog" element={ <Blog /> }/>
+        <Route path="/contact" element={ <Contact /> }/>
       </Routes>
     </BrowserRouter>
   </div>

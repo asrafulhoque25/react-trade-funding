@@ -27,7 +27,6 @@ const Home = () => {
         <Blogs SectionHeader={
           <CommonHeader
             SectionTitle='Let us help you take your business to the next level!'
-            addClass={""}
           />
         } />
         <Brand

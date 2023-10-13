@@ -19,6 +19,7 @@ export default {
         "dark-dark-1":"#001B44",
         "dark-dark-2":"#4B5768",
         "dark-dark-3":"#5D6878",
+        "dark-dark-4":"#8E97A6",
         "dark-dark-6":"#E5E8ED",
         "ascent-1":"#FF5E5A",
         "ascent-3":"#DAF6F8",
