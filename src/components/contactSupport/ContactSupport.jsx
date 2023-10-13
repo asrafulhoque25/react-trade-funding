@@ -8,7 +8,7 @@ const ContactSupport = () => {
     <section className='ContactSupport section-padding bg-primary-main-light'>
       <div className="container">
         <div className="supportWrapper grid grid-cols-3 gap-6">
-          <div className="supportItems bg-white rounded-xl p-6">
+          <div className="supportItems bg-white rounded-xl p-6 box-shadow">
             <div className="icon mb-6">
               <img src={CallIcon} alt="icon" />
             </div>
@@ -16,7 +16,7 @@ const ContactSupport = () => {
               1300 161 641
             </h3>
           </div>
-          <div className="supportItems bg-white rounded-xl p-6">
+          <div className="supportItems bg-white rounded-xl p-6 box-shadow">
             <div className="icon mb-6">
               <img src={Email} alt="icon" />
             </div>
@@ -26,7 +26,7 @@ const ContactSupport = () => {
               </a>
             </h3>
           </div>
-          <div className="supportItems bg-white rounded-xl p-6">
+          <div className="supportItems bg-white rounded-xl p-6 box-shadow">
             <div className="icon mb-6">
               <img src={CallIcon} alt="icon" />
             </div>
