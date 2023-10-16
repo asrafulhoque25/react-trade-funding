@@ -16,7 +16,7 @@ import loan from "/assets/img/loan.svg";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-const GrowSave = ({addClass}) => {
+const GrowSave = ({addClass,isHome}) => {
   const styles = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
@@ -84,7 +84,8 @@ const GrowSave = ({addClass}) => {
         </div>
         <div className="">
           <Tab.Group>
-            <Tab.List className="flex space-x-1 justify-center w-full mx-auto rounded-xl my-[50px] bg-white max-w-[330px]">
+       {isHome &&
+        <Tab.List className="flex space-x-1 justify-center w-full mx-auto rounded-xl my-[50px] bg-white max-w-[330px]">
               {Object.keys(categories).map((category) => (
                 <Tab
                   key={category}
@@ -102,6 +103,7 @@ const GrowSave = ({addClass}) => {
                 </Tab>
               ))}
             </Tab.List>
+       }
             <Tab.Panels className="mt-2">
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel key={idx}>
