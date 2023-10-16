@@ -2,11 +2,9 @@ import React from 'react';
 import { useLocation } from 'react-router';
 import { partnerFeatureData } from '../Data';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
-import Navbar from '../components/Navbar/Navbar';
 import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
 import CommonFeature from '../components/commonFeature/CommonFeature';
-import Footer from '../components/footer/Footer';
 import PartnershipPrograms from '../components/partnershipPrograms/PartnershipPrograms';
 import SubBanner from "../components/subBanner/SubBanner";
 import aboutBanner from '/assets/img/partner-banner-img.png';
@@ -27,7 +25,6 @@ const Partners = () => {
   return (
 
     <div className='partner'>
-      <Navbar />
       <SubBanner
         addRowClass={'pt-[130px] pb-[130px]'}
         title="Partner with us!"
@@ -46,7 +43,6 @@ const Partners = () => {
         containerClass={'container'}
         rowClass={'gap-6 justify-center lg:justify-between'}
       />
-      <Footer />
     </div>
 
   )

@@ -2,10 +2,8 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { aboutFeatureData } from "../Data";
 import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
-import Navbar from "../components/Navbar/Navbar";
 import AboutSuccess from "../components/aboutsuccess/AboutSuccess";
 import CommonFeature from "../components/commonFeature/CommonFeature";
-import Footer from "../components/footer/Footer";
 import SubBanner from "../components/subBanner/SubBanner";
 import Video from "../components/video/Video";
 import aboutBanner from '/assets/img/aboutBanner.svg';
@@ -26,7 +24,6 @@ const About = () => {
   
   return (
     <div className="about">
-      <Navbar />
       <SubBanner
         title="SMEs are the backbone of almost every major economy around the globe!"
         bannerDesc={bannerDesc}
@@ -36,7 +33,6 @@ const About = () => {
       <AboutSuccess />
       <CommonFeature featureData={aboutFeatureData} sectionCls="aboutFeatureWrapper" isCount={true} isSecHeader={true} />
       <Video />
-      <Footer />
     </div>
   );
 };

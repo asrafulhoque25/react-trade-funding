@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
-import Navbar from '../components/Navbar/Navbar';
 import Blogs from '../components/blogs/Blogs';
 import CommonHeader from '../components/commonHeader/CommonHeader';
 import ContactSupport from '../components/contactSupport/ContactSupport';
@@ -23,8 +22,6 @@ const Contact = () => {
 
   return (
     <div>
-
-      <Navbar />
       <SubBanner isContact={true}
         addRowClass={'pt-[100px] pb-[100px]'}
         title="Contact us"
