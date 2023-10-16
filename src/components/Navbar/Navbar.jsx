@@ -112,7 +112,7 @@ const Navbar = () => {
         </div>
       </header>
 
-      <div className="mt-28 dropdown-main-wrap max-w-[746px] w-full px-[40px] pt-[20px] pb-[30px]">
+      <div className="dropdown-main-wrap max-w-[746px] w-full px-[40px] pt-[20px] pb-[30px]">
        {/* <h3>lsakdfjalsdkjflkj</h3> */}
       </div>
     </div>

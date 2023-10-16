@@ -4,7 +4,7 @@ import Button from '../buttons/Button';
 import CheckList from './CheckList';
 import BannerImg from '/assets/img/home-banner-img.jpg';
 
-const Banner = () => {
+const Banner = ({ BusinessLoans }) => {
 
   const AchievedData = [
     {
@@ -37,16 +37,16 @@ const Banner = () => {
   return (
     <section className='main-banner'>
       <div className="container m-auto">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 items-center pt-[50px] pb-[120px]">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 items-center pt-[120px] pb-[120px]">
           <div className='bannerContent'>
             <h1 className='text-[36px] md:text-[46px] lg:text-[56px] text-dark-dark-1 font-normal leading-[1.25] mb-6'>
               Unlock cash flow & improve how your business transacts.
-              </h1>
+            </h1>
             <p className='text-dark-dark-2 text-[20px] font-bold mb-6'>
               The preferred partner to businesses who want to Grow and Save
-              </p>
-              <CheckList  />
-              <Button />
+            </p>
+            <CheckList />
+            <Button />
           </div>
           <div className='bannerImage pb-6 lg:pb-0 lg:ms-auto'>
             <img className='max-w-100 h-auto' src={BannerImg} alt="banner img" />
@@ -55,6 +55,7 @@ const Banner = () => {
 
         <div className="ourAchieved flex lg:justify-between flex-wrap gap-6 pb-10">
           {
+            !BusinessLoans &&
             AchievedData.map((data, id) =>
               <div key={id} className="achieved border-l-2 border-dark-dark-6 ps-4">
                 <h5 className='text-dark-dark-1 text-[24px] font-normal'>

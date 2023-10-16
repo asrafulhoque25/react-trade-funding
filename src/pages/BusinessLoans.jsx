@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import SubBanner from '../components/subBanner/SubBanner';
-import aboutBanner from '/assets/img/partner-banner-img.png';
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import Banner from '../components/banner/Banner';
 
 const BusinessLoans = () => {
 
@@ -17,12 +17,8 @@ const BusinessLoans = () => {
 
   return (
     <div>
-      <SubBanner
-        addRowClass={'pt-[130px] pb-[130px]'}
-        title="Partner with us!"
-        bannerDesc={bannerDesc}
-        bannerImg={aboutBanner}
-      />
+      <Banner BusinessLoans={true} />
+      <Breadcrumb routeName={routeName} />
     </div>
   );
 };
