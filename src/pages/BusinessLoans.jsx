@@ -2,6 +2,9 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Banner from '../components/banner/Banner';
+import BringingExperience from '../components/bringingExperience/BringingExperience';
+import GrowSave from '../components/growandsave/GrowSave';
+import BannerImg from '/assets/img/bl-banner-img.png';
 
 const BusinessLoans = () => {
 
@@ -17,8 +20,15 @@ const BusinessLoans = () => {
 
   return (
     <div>
-      <Banner BusinessLoans={true} />
+      <Banner
+        BannerTitle={"Let's put the CASH back in your Cash flow!"}
+        BannerIntro={"Our diversified panel of lenders and products delivers the highest success rate for securing the funding your business needs."}
+        BannerImage={BannerImg}
+        BusinessLoans={true}
+      />
       <Breadcrumb routeName={routeName} />
+      <BringingExperience />
+      <GrowSave />
     </div>
   );
 };
