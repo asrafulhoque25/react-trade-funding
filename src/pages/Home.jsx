@@ -13,17 +13,17 @@ const Home = () => {
   return (
     <div>
       <>
-<<<<<<< HEAD
+
         <Navbar />
         <Banner 
           BannerTitle={"Unlock cash flow & improve how your business transacts."}
           BannerIntro={"The preferred partner to businesses who want to Grow and Save"}
           BannerImage={BannerImg}
         />
-=======
-        <Banner />
->>>>>>> 7563f20e5a6cc02c25f062b0e83866daddc19e18
-        <GrowSave />
+
+        <GrowSave 
+          isHome={true}
+        />
         <CommonFeature sectionCls="featured-wrapper" featureData={homeFeatureData} isSecHeader={true} SectionHeader={
           <CommonHeader
             SectionTitle='Dedicated support to help you achieve!'

@@ -26,7 +26,7 @@ const Partners = () => {
 
     <div className='partner'>
       <SubBanner
-        addRowClass={'pt-[130px] pb-[130px]'}
+        addRowClass={'pt-[230px] pb-[130px]'}
         title="Partner with us!"
         bannerDesc={bannerDesc}
         bannerImg={aboutBanner}
