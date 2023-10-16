@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 
 import { Tab } from "@headlessui/react";
@@ -15,7 +16,7 @@ import loan from "/assets/img/loan.svg";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-const GrowSave = () => {
+const GrowSave = ({addClass}) => {
   const styles = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
@@ -107,7 +108,7 @@ const GrowSave = () => {
                   <div className="grid grid-cols-4 gap-[30px] justify-between align-top">
                     {posts.map((post) => (
                       <a href=""
-                        className="relative group transition-all bg-white text-center py-[40px] px-4 rounded-s-[24px] rounded-br-[24px] shadow-black_sw"
+                        className={`${addClass} relative group transition-all bg-white text-center py-[40px] px-4 rounded-s-[24px] rounded-br-[24px] shadow-black_sw` }
                         key={post.id} >
                         <div className="card-arrow absolute right-[10px] top-[10px]">
                           <svg width="20" height="20"   viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
