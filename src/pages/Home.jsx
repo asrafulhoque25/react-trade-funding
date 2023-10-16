@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <div>
       <>
-        <Navbar />
         <Banner />
         <GrowSave />
         <CommonFeature sectionCls="featured-wrapper" featureData={homeFeatureData} isSecHeader={true} SectionHeader={
@@ -33,7 +32,6 @@ const Home = () => {
           containerClass={'container'}
           rowClass={'gap-6 justify-center lg:justify-between'}
         />
-        <Footer />
       </>
     </div>
   )
