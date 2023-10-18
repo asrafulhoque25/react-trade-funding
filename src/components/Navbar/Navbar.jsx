@@ -21,10 +21,14 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
+  const menuDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
 
 
   const toggleMenu = () => {
-    setIsMenuOpen(!toggle);
+    setToggle(!toggle);
   };
   useEffect(() => {
     const handleScroll = () => {
@@ -71,15 +75,13 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
                 <li>
                   <Link
                     to={"/about"}
-                    className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
-                  >
+                    className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold" >
                     About
                   </Link>
                 </li>
                 <li
                   className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer"
-                  onClick={toggleDropdown}
-                >
+                  onClick={menuDropdown} >
                   Products{" "}
                   <span className=" inline-flex ps-1">
                     <img src={arrow_down} alt="" />
