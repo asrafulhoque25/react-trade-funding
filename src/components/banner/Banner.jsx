@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../buttons/Button';
 import CheckList from './CheckList';
 
-const Banner = ({ BusinessLoans, BannerTitle, BannerIntro, BannerImage }) => {
+const Banner = ({ BusinessLoans, BannerTitle, BannerIntro, BannerIntro2, BannerImage }) => {
 
   const AchievedData = [
     {
@@ -44,6 +44,9 @@ const Banner = ({ BusinessLoans, BannerTitle, BannerIntro, BannerImage }) => {
             </h1>
             <p className='text-dark-dark-2 text-[20px] font-bold mb-6'>
               {BannerIntro}
+            </p>
+            <p className='text-dark-dark-2 text-[20px] font-light italic mb-6'>
+              {BannerIntro2}
             </p>
             <CheckList />
             <Button />

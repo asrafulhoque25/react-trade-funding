@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import CommonHeader from '../commonHeader/CommonHeader';
 import shareIcon from '/assets/img/ep-share-icon.svg';
 import starIcon from '/assets/img/star-yellow.svg';
 
-const BringingExperience = () => {
+const BringingExperience = ({ secBgColor }) => {
   return (
-    <section className='BringingExperience section-padding bg-primary-main-light'>
+    <section className={`BringingExperience section-padding ${secBgColor}`}>
       <div className="container">
         <CommonHeader
           SectionTitle={" Bringing the first class experience to business lending"}

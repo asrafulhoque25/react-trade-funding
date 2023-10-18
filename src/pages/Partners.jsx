@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
-import { partnerFeatureData } from '../Data';
+import { partnerData1, partnerFeatureData } from '../Data';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
@@ -33,13 +33,15 @@ const Partners = () => {
       />
       <Breadcrumb routeName={routeName} />
       <Brand
-        rowClass={'gap-6 justify-center '}
+        brandData={partnerData1}
+        rowClass={'gap-6 justify-center xl:grid xl:grid-cols-6'}
         itemClass={'logo-circle bg-white max-w-[250px] h-[200px] cursor-pointer xl:max-w-[260px] w-full h-[260px] xl:max-h-[260px] rounded-full transition-all hover:bg-ascent-3 '}
       />
       <CommonFeature featureData={partnerFeatureData} sectionCls="featured-wrapper" isCount={false} isSecHeader={false} />
-      <PartnershipPrograms />
+      <PartnershipPrograms secBgColor={'bg-primary-main-light'} />
       <Blogs />
       <Brand
+        brandData={partnerData1}
         containerClass={'container'}
         rowClass={'gap-6 justify-center lg:justify-between'}
       />

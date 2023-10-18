@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { businessCardFeatureData } from '../Data';
+import { businessCardFeatureData, partnerData1 } from '../Data';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
@@ -36,7 +36,7 @@ const BusinessCard = () => {
       <CommonFeature featureData={businessCardFeatureData} sectionCls="featured-wrapper" isCount={true} isSecHeader={false} />
       <EasyApply />
       <Blogs />
-      <Brand />
+      <Brand brandData={partnerData1} />
     </div>
   );
 };

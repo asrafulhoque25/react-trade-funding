@@ -9,6 +9,7 @@ import BusinessLoans from "./pages/BusinessLoans";
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Partners from './pages/Partners';
+import Payments from "./pages/Payments";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/businessloans" element={<BusinessLoans />} />
           <Route path="/businesscard" element={<BusinessCard />} />
+          <Route path="/payments" element={<Payments />} />
         </Routes>
         <Footer />
       </BrowserRouter>

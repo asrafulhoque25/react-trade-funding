@@ -17,8 +17,6 @@ import partnerFeature4 from '/assets/img/partner-feature4.png';
 
 
 
-
-
 import business1 from '/assets/img/business1.svg';
 import business2 from '/assets/img/business2.svg';
 import business3 from '/assets/img/business3.svg';
@@ -31,6 +29,19 @@ import business7 from '/assets/img/business7.svg';
 import bcImage1 from '/assets/img/bcImage1.png';
 import bcImage2 from '/assets/img/bcImage2.png';
 
+
+import BrandLogo1 from '/assets/img/brand-logo1.svg';
+import BrandLogo2 from '/assets/img/brand-logo2.svg';
+import BrandLogo3 from '/assets/img/brand-logo3.svg';
+import BrandLogo4 from '/assets/img/brand-logo4.svg';
+import BrandLogo5 from '/assets/img/brand-logo5.svg';
+import BrandLogo6 from '/assets/img/brand-logo6.svg';
+
+
+import paymentPartner1 from '/assets/img/payment-partner1.png';
+import paymentPartner2 from '/assets/img/payment-partner2.png';
+import paymentPartner3 from '/assets/img/payment-partner3.png';
+import paymentPartner4 from '/assets/img/payment-partner4.png';
 
 
 export const homeFeatureData = [
@@ -337,3 +348,49 @@ export const businessLoans = [
   }
 ]
 
+export const partnerData1 = [
+  {
+    id: 1,
+    brandLogo: BrandLogo1,
+  },
+  {
+    id: 2,
+    brandLogo: BrandLogo2,
+  },
+  {
+    id: 3,
+    brandLogo: BrandLogo3,
+  },
+  {
+    id: 4,
+    brandLogo: BrandLogo4,
+  },
+  {
+    id: 5,
+    brandLogo: BrandLogo5,
+  },
+  {
+    id: 6,
+    brandLogo: BrandLogo6,
+  }
+];
+
+
+export const partnerPaymentData = [
+  {
+    id: 1,
+    brandLogo: paymentPartner1,
+  },
+  {
+    id: 2,
+    brandLogo: paymentPartner2,
+  },
+  {
+    id: 3,
+    brandLogo: paymentPartner3,
+  },
+  {
+    id: 4,
+    brandLogo: paymentPartner4,
+  },
+];
