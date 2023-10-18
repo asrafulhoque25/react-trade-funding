@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { partnerFeatureData } from '../Data';
+import { businessLoans, partnerFeatureData } from '../Data';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
 import BringingExperience from '../components/bringingExperience/BringingExperience';
 import CommonFeature from '../components/commonFeature/CommonFeature';
+import GreatCustomers from '../components/greatCustomers/GreatCustomers';
 import GrowSave from '../components/growandsave/GrowSave';
 import BannerImg from '/assets/img/bl-banner-img.png';
 
@@ -37,7 +38,8 @@ const BusinessLoans = () => {
         iconClass={'text-start'}
         secTitle={"What best describes you"}
       />
-      <CommonFeature featureData={partnerFeatureData} sectionCls="featured-wrapper" />
+      <CommonFeature featureData={businessLoans} isCount={true} sectionCls="featured-wrapper" fontBold={ true } isBusinessFeature={true} />
+      <GreatCustomers />
       <Blogs />
     </div>
   );

@@ -34,7 +34,7 @@ const Partners = () => {
       <Breadcrumb routeName={routeName} />
       <Brand
         rowClass={'gap-6 justify-center '}
-        itemClass={'logo-circle bg-white w-[200px] h-[200px] cursor-pointer lg:w-[285px] lg:h-[285px] rounded-full transition-all hover:bg-ascent-3 '}
+        itemClass={'logo-circle bg-white max-w-[250px] h-[200px] cursor-pointer xl:max-w-[260px] w-full h-[260px] xl:max-h-[260px] rounded-full transition-all hover:bg-ascent-3 '}
       />
       <CommonFeature featureData={partnerFeatureData} sectionCls="featured-wrapper" isCount={false} isSecHeader={false} />
       <PartnershipPrograms />

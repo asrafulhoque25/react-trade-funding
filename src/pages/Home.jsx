@@ -1,6 +1,5 @@
 
 import { homeFeatureData } from '../Data';
-import Navbar from '../components/Navbar/Navbar';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
@@ -13,8 +12,6 @@ const Home = () => {
   return (
     <div>
       <>
-
-        <Navbar />
         <Banner 
           BannerTitle={"Unlock cash flow & improve how your business transacts."}
           BannerIntro={"The preferred partner to businesses who want to Grow and Save"}
@@ -41,6 +38,7 @@ const Home = () => {
           containerClass={'container'}
           rowClass={'gap-6 justify-center lg:justify-between'}
         />
+      
       </>
     </div>
   )

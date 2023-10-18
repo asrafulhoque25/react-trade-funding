@@ -5,7 +5,6 @@ import PPIcon2 from '/assets/img/pp-icon2.svg';
 import PPIcon3 from '/assets/img/pp-icon3.svg';
 
 const PartnershipPrograms = () => {
-
   const partnerProgramsData = [
     {
       id: 1,
