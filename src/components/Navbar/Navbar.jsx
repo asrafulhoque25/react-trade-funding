@@ -55,7 +55,7 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
 
   return (
     <div>
-      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 z-50 min-h-screen lg:min-h-0">
+      <header className={`w-full bg-white md:bg-white fixed top-0 left-0 right-0 z-50 ${toggle ? 'min-h-screen' : 'min-h-0'}`}>
         <Topnavbar />
         <div className="container mx-auto">
           <nav className="nav-for-desktop">
