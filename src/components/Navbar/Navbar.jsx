@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 import Topnavbar from "./Topnavbar";
 import arrow_down from "/assets/img/arrow_down.svg";
-import topArrow from "/assets/img/drop-top.svg";
 import cornerArrow from "/assets/img/corner-arrow.svg";
+import topArrow from "/assets/img/drop-top.svg";
 
 import { Link } from "react-router-dom";
+import arrowBack from "/assets/img/arrow-back.svg";
 import bar from "/assets/img/bar.svg";
 import logo from "/assets/img/logo.svg";
-import mobilelogo from "/assets/img/mobile-logo.svg";
 import menuBar from "/assets/img/menu-bar.svg";
-import arrowBack from "/assets/img/arrow-back.svg";
 import menuCross from "/assets/img/menuCross.svg";
+import mobilelogo from "/assets/img/mobile-logo.svg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -55,7 +55,7 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
 
   return (
     <div>
-      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 z-50">
+      <header className="w-full bg-white md:bg-white fixed top-0 left-0 right-0 z-50 min-h-screen lg:min-h-0">
         <Topnavbar />
         <div className="container mx-auto">
           <nav className="nav-for-desktop">
