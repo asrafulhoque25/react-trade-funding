@@ -1,10 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-<<<<<<< HEAD
-import { BusinessLoansFeatureData } from '../Data';
-=======
-import { businessLoans, partnerFeatureData } from '../Data';
->>>>>>> 0acbb6c2778e2bef78b3f68fa2ba01023412816f
+import { businessLoans } from '../Data';
+
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
@@ -42,12 +39,8 @@ const BusinessLoans = () => {
         iconClass={'text-start'}
         secTitle={"What best describes you"}
       />
-<<<<<<< HEAD
-      <CommonFeature featureData={BusinessLoansFeatureData} BusinessLoans="true" sectionCls="featured-wrapper" isCount={true} isSecHeader={false} />
-=======
       <CommonFeature featureData={businessLoans} isCount={true} sectionCls="featured-wrapper" fontBold={ true } isBusinessFeature={true} />
       <GreatCustomers />
->>>>>>> 0acbb6c2778e2bef78b3f68fa2ba01023412816f
       <Blogs />
     </div>
   );

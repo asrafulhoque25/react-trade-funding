@@ -15,14 +15,6 @@ import partnerFeature3 from '/assets/img/partner-feature3.png';
 import partnerFeature4 from '/assets/img/partner-feature4.png';
 
 
-import blFeatureImg1 from '/assets/img/blFeatureImg1.png';
-import blFeatureImg2 from '/assets/img/blFeatureImg2.png';
-import blFeatureImg3 from '/assets/img/blFeatureImg3.png';
-import blFeatureImg4 from '/assets/img/blFeatureImg4.png';
-import blFeatureImg5 from '/assets/img/blFeatureImg5.png';
-import blFeatureImg6 from '/assets/img/blFeatureImg6.png';
-import blFeatureImg7 from '/assets/img/blFeatureImg7.png';
-import blFeatureImg8 from '/assets/img/blFeatureImg8.png';
 
 
 
@@ -34,7 +26,10 @@ import business4 from '/assets/img/business4.svg';
 import business5 from '/assets/img/business5.svg';
 import business6 from '/assets/img/business6.svg';
 import business7 from '/assets/img/business7.svg';
-import business8 from '/assets/img/business8.svg';
+
+
+import bcImage1 from '/assets/img/bcImage1.png';
+import bcImage2 from '/assets/img/bcImage2.png';
 
 
 
@@ -124,6 +119,26 @@ export const partnerFeatureData = [
 
   },
 ]
+
+
+
+export const businessCardFeatureData = [
+  {
+    id: 1,
+    FeatureImg: bcImage1,
+    featuredTitle: "Partner and see the magic",
+    featuredIntro: "Partner with one of the worlds most diversified financial services marketplaces for SME businesses and offer your customers  a consolidated financial services platform. Trade Funding has sourced the best products available across lending and payments to drive growth and cut costs in our customer businesses."
+  },
+  {
+    id: 2,
+    FeatureImg: bcImage2,
+    featuredTitle: "Get a business card with a revolving line of credit to pay for purchases today!",
+    featuredIntro: "Join 1,000’s of other Australian Small Businesses."
+  },
+]
+
+
+
 
 export const businessLoans = [
   {
@@ -322,86 +337,3 @@ export const businessLoans = [
   }
 ]
 
-
-export const BusinessLoansFeatureData = [
-  {
-    id: 1,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg1,
-    limits: "$5,000 to $500,000",
-    term: "Up to 44 days interest free",
-    rates: "1.5% per month",
-    turnAround: "Access digital cards same day",
-  },
-  {
-    id: 2,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg2,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 7 years",
-    rates: "Rates from 7%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 3,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg3,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 4,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg4,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 5,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg5,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 6,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg6,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 7,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg7,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-  {
-    id: 8,
-    title: "Business cards",
-    desc: "Streamline purchases, empower staff with cards and have full control of when and how they spend.",
-    img: blFeatureImg8,
-    limits: "$5,000 to $1,000,000",
-    term: "Up to 3 years",
-    rates: "Rates from 9%",
-    turnAround: "As quick as 24 hours",
-  },
-]

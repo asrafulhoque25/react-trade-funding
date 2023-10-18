@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import About from './pages/About';
 import Blog from './pages/Blog';
+import BusinessCard from "./pages/BusinessCard";
 import BusinessLoans from "./pages/BusinessLoans";
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/businessloans" element={<BusinessLoans />} />
+          <Route path="/businesscard" element={<BusinessCard />} />
         </Routes>
         <Footer />
       </BrowserRouter>
