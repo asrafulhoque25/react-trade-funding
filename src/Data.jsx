@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Button from './components/buttons/Button';
 import aboutfeature1 from '/assets/img/aboutfeature1.svg';
 import aboutfeature2 from '/assets/img/aboutfeature2.svg';
@@ -22,6 +23,18 @@ import blFeatureImg5 from '/assets/img/blFeatureImg5.png';
 import blFeatureImg6 from '/assets/img/blFeatureImg6.png';
 import blFeatureImg7 from '/assets/img/blFeatureImg7.png';
 import blFeatureImg8 from '/assets/img/blFeatureImg8.png';
+
+
+
+
+import business1 from '/assets/img/business1.svg';
+import business2 from '/assets/img/business2.svg';
+import business3 from '/assets/img/business3.svg';
+import business4 from '/assets/img/business4.svg';
+import business5 from '/assets/img/business5.svg';
+import business6 from '/assets/img/business6.svg';
+import business7 from '/assets/img/business7.svg';
+import business8 from '/assets/img/business8.svg';
 
 
 
@@ -110,6 +123,203 @@ export const partnerFeatureData = [
     featuredIntro: "Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Id consectetur purus",
 
   },
+]
+
+export const businessLoans = [
+  {
+    id:1,
+    FeatureImg: business1,
+    featuredTitle: "Term loans",
+    featuredIntro: "You have big plans or just want to consolidate debt and need a larger loan over a longer term. Term loans are great when you have a specific purpose.",
+  businessFeatures: [
+    {
+      title:"Limits",
+      amount:"$5,000 to $500,000"
+    },
+    {
+      title:"Term",
+      amount:"Up to 44 days interest free"
+    },
+    {
+      title:"Rates",
+      amount:"1.5% per month"
+    },
+    {
+      title:"Turn around",
+      amount:"Access digital cards same day"
+    }
+  ]
+  },
+
+  {
+    id:2,
+    FeatureImg: business2,
+    featuredTitle: "Line of credit",
+    featuredIntro: "For complete cash flow flexibility. Draw down and use funds when needed for any worthwhile business purpose. Don't have an immediate need, get access now and have available to execute on that next opportunity.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Revolving credit facility"
+      },
+      {
+        title:"Term",
+        amount:"Repayment schedule up to 24 months"
+      },
+      {
+        title:"Rates",
+        amount:"from 9%"
+      },
+      {
+        title:"Turn around",
+        amount:"24 hours"
+      }
+    ]
+  },
+  {
+    id:3,
+    FeatureImg: business3,
+    featuredTitle: "Receivables management & Invoice finance",
+    featuredIntro: "Tired of getting paid late. Chasing customer invoices and waiting for payment can be an exhausting exercise. Get paid today by unlocking your outstanding invoices and don't impact your customers.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Revolving credit facility"
+      },
+      {
+        title:"Term",
+        amount:"Customers can pay per their normal timing."
+      },
+      {
+        title:"Rates",
+        amount:"from 6% + RBA rate"
+      },
+      {
+        title:"Turn around",
+        amount:"24 hours"
+      }
+    ]
+ 
+  },
+  {
+    id:4,
+    FeatureImg: business4,
+    featuredTitle: "Trade term finance",
+    featuredIntro: "Increase sales and get paid upfront without the risk of no payment or time wasted chasing payment. Access our Trade term finance product.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Amounts up to $100k"
+      },
+      {
+        title:"Term",
+        amount:"up to 44 days interest free"
+      },
+      {
+        title:"Rates",
+        amount:"Rates from 1.5% per month"
+      },
+      {
+        title:"Turn around",
+        amount:"Auto pre-approvals with transaction history."
+      }
+    ]
+  },
+  {
+    id:5,
+    FeatureImg: business5,
+    featuredTitle: "Receivables management & Invoice finance",
+    featuredIntro: "Tired of getting paid late. Chasing customer invoices and waiting for payment can be an exhausting exercise. Get paid today by unlocking your outstanding invoices and don't impact your customers.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Revolving credit facility"
+      },
+      {
+        title:"Term",
+        amount:"Customers can pay per their normal timing."
+      },
+      {
+        title:"Rates",
+        amount:"from 6% + RBA rate"
+      },
+      {
+        title:"Turn around",
+        amount:"24 hours"
+      }
+    ]
+  },
+  {
+    id:6,
+    FeatureImg: business6,
+    featuredTitle: "Trade term finance",
+    featuredIntro: "Increase sales and get paid upfront without the risk of no payment or time wasted chasing payment. Access our Trade term finance product..",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Amounts up to $100k"
+      },
+      {
+        title:"Term",
+        amount:"up to 44 days interest free"
+      },
+      {
+        title:"Rates",
+        amount:"Rates from 1.5% per month"
+      },
+      {
+        title:"Turn around",
+        amount:"Auto pre-approvals with transaction history."
+      }
+    ]
+  },
+  {
+    id:7,
+    FeatureImg: business7,
+    featuredTitle: "Ecommerce funding",
+    featuredIntro: "Increase sales and get paid upfront without the risk of no payment or time wasted chasing payment. Access our Trade term finance product.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Revolving credit facility"
+      },
+      {
+        title:"Term",
+        amount:"up to 44 days interest free"
+      },
+      {
+        title:"Rates",
+        amount:"from 9% [to be confirmed]"
+      },
+      {
+        title:"Turn around",
+        amount:"48 hours"
+      }
+    ]
+  },
+  {
+    id:8,
+    FeatureImg: business5,
+    featuredTitle: "Vehicle finance",
+    featuredIntro: "Use a fixed term loan for your next vehicle purchase, whether it be for a car, truck, ute or van, we have suitable options for you.",
+    businessFeatures: [
+      {
+        title:"Type",
+        amount:"Fixed term"
+      },
+      {
+        title:"Term",
+        amount:"up to 7 years"
+      },
+      {
+        title:"Rates",
+        amount:"from 6.29%"
+      },
+      {
+        title:"Turn around",
+        amount:"24 hours"
+      }
+    ]
+  }
 ]
 
 

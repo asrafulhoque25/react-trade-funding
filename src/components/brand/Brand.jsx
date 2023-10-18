@@ -45,12 +45,12 @@ const Brand = ({ itemClass, rowClass, containerClass}) => {
             We’ve partnered with Australias leading providers
           </h6>
 
-          <div className={`${rowClass} brand-logos flex flex-wrap`}>
+          <div className={`${rowClass} brand-logos flex xl:justify-between items-center flex-wrap justify-center xl:grid xl:grid-cols-6`}>
 
             {
               partnerLogos.map((partner, id) => 
                 <div key={id} className={`${itemClass} flex justify-center items-center`}>
-                  <img className='w-auto max-w-min' src={partner.brandLogo} alt="brand logo" />
+                  <img className='' src={partner.brandLogo} alt="brand logo" />
                 </div>
               )
             }
