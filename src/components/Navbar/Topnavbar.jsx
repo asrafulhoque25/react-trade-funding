@@ -11,9 +11,10 @@ const Topnavbar = () => {
       {isOpen && (
         <div className="bg-ascent-3 py-2 relative">
           <div className="flex items-center justify-center  gap-1">
-            <p className=" text-sm text-dark-dark-2 font-light">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore{" "} </p>
-            <a className=" text-sm text-dark-dark-2 font-light underline" href="" >  Read more </a>
+            <p className="text-[10px] sm:text-sm text-dark-dark-2 font-light">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            </p>
+            <a className=" text-[10px] sm:text-sm text-dark-dark-2 font-light underline" href="" >  Read more </a>
           </div>
           <button className=" absolute right-4 top-3" onClick={handleClose}>
             <img src={cross} alt="" />
