@@ -53,3 +53,7 @@ body {
 button:focus-visible {
     outline: none !important;
 }
+
+.bgGradient {
+    background: linear-gradient(180deg, rgba(229, 239, 254, 0.50) 0%, rgba(229, 239, 254, 0.00) 100%);
+}

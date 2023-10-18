@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { partnerFeatureData } from '../Data';
+import { BusinessLoansFeatureData } from '../Data';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
@@ -37,7 +37,7 @@ const BusinessLoans = () => {
         iconClass={'text-start'}
         secTitle={"What best describes you"}
       />
-      <CommonFeature featureData={partnerFeatureData} sectionCls="featured-wrapper" />
+      <CommonFeature featureData={BusinessLoansFeatureData} BusinessLoans="true" sectionCls="featured-wrapper" isCount={true} isSecHeader={false} />
       <Blogs />
     </div>
   );
