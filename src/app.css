@@ -61,9 +61,3 @@ button:focus-visible {
 .bgOffWhite {
     background-color: rgba(229, 239, 254, 0.2);
 }
-
-@media (max-width: 991px) {
-    header {
-        height: 100vh !important;
-    }
-}

@@ -197,10 +197,10 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
           <nav className="nav-for-mobile">
             {!showProductDropdown && <div className="mobile-nav-wrapper flex items-center gap-6 justify-between py-[20px]">
               <Link>
-                <img src={mobilelogo} alt="" />
+                <img src={mobilelogo} alt="logo" />
               </Link>
               <Link onClick={toggleDropdown}>
-                <img src={menuBar} alt="" />
+                <img src={menuBar} alt="bar Icon" />
               </Link>
             </div>}
      { toggle && <div className=" flex flex-col justify-between w-full  h-[86vh] py-6">
@@ -227,7 +227,7 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
                 >
                   Products{" "}
                   <span className=" inline-flex ps-1">
-                    <img src={arrow_down} alt="" />
+                    <img src={arrow_down} alt="icon" />
                   </span>
                   {showDropdown && (
                     <div className="dropdown-content">
@@ -240,7 +240,7 @@ const [showProductDropdown, setShowProductDropdown] = useState(false)
                         <Link className="flex items-center justify-between text-[#FF5E5A] font-normal ">
                           Solutions
                           <span>
-                            <img src={cornerArrow} className="" alt="" />
+                            <img src={cornerArrow} className="" alt="cornerArrow" />
                           </span>
                         </Link>
                         <div className="nav-dropdown-row grid grid-cols-2 gap-[32px]">
