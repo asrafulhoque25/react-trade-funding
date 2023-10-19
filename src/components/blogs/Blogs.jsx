@@ -25,11 +25,11 @@ const Blogs = ({ SectionHeader }) => {
               Business Loans
             </a>
             <h3 className='pt-4 pb-6'>
-              <a href="#" className='text-dark-dark-1 text-[32px] font-bold'>
+              <a href="#" className='text-dark-dark-1 text-[27px] lg:text-[32px] font-bold'>
                 Benefits of offering trade terms to business customers: how it can help your business grow
               </a>
             </h3>
-            <p className='text-[20px] text-dark-dark-3 font-normal leading-[30px] mb-8'>
+            <p className='text-[16px] lg:text-[20px] text-dark-dark-3 font-normal leading-[30px] mb-8'>
               As a business owner, you may have heard the term trade terms before. It refers to the credit that a business extends to its customers to pay for goods or services over an agreed-upon period. This can be an effective way to build long-term relationships with your customers and increase sales. In this blog, well explore why businesses should offer trade terms to their business customers and how it can benefit them.
             </p>
 

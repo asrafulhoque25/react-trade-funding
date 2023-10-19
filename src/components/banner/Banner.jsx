@@ -39,7 +39,7 @@ const Banner = ({ BusinessLoans, BannerTitle, BannerIntro, BannerIntro2, BannerI
       <div className="container m-auto">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 items-center pt-[120px] pb-[120px]">
           <div className='bannerContent'>
-            <h1 className='text-[36px] md:text-[46px] lg:text-[56px] text-dark-dark-1 font-normal leading-[1.25] mb-6'>
+            <h1 className='text-[32px] md:text-[42px] lg:text-[56px] text-dark-dark-1 font-normal leading-[1.25] mb-6'>
               {BannerTitle}
             </h1>
             <p className='text-dark-dark-2 text-[20px] font-bold mb-6'>

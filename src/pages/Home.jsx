@@ -1,5 +1,5 @@
 
-import { homeFeatureData } from '../Data';
+import { homeFeatureData, partnerData1 } from '../Data';
 import Banner from '../components/banner/Banner';
 import Blogs from '../components/blogs/Blogs';
 import Brand from '../components/brand/Brand';
@@ -35,6 +35,7 @@ const Home = () => {
           />
         } />
         <Brand
+          brandData={partnerData1}
           containerClass={'container'}
           rowClass={'gap-6 justify-center lg:justify-between'}
         />

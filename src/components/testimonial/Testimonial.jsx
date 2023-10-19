@@ -1,8 +1,8 @@
 import React from "react";
-import tesBg from "/assets/img/tesBg.png";
+import Button from "../buttons/Button";
 import "./Testimonial.css";
 import { tesData } from "./TestimonialData";
-import Button from "../buttons/Button";
+import tesBg from "/assets/img/tesBg.png";
 
 const Testimonial = () => {
   const styles = {
@@ -23,14 +23,14 @@ const Testimonial = () => {
       <div className="container">
         <div className="common-title mx-auto" style={{ maxWidth: "670px" }}>
           <h2
-            className=" text-dark-dark-1 text-[48px] font-normal text-center leading-[58px]"
+            className=" text-dark-dark-1 text-[30px] sm:text-[35px] lg:text-[48px] font-normal text-center leading-[1.4]"
             dangerouslySetInnerHTML={{ __html: Data.heading }}
           />
         </div>
         <h4 className="mb-[30px] mt-[50px] text-center text-base font-bold">
           {Data.subheading}
         </h4>
-        <div className="testimonial-wrap grid grid-cols-3 gap-[30px] justify-between align-top">
+        <div className="testimonial-wrap grid sm:grid-cols-2 lg:grid-cols-3 gap-[30px] sm:justify-between align-top">
           {tesData.map((data) => {
             return (
               <div

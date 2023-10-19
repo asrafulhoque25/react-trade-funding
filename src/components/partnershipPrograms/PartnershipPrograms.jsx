@@ -37,7 +37,7 @@ const PartnershipPrograms = () => {
         />
 
 
-        <div className="pp-wrapper grid grid-cols-3 gap-6">
+        <div className="pp-wrapper grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {
             partnerProgramsData.map((program, id) =>

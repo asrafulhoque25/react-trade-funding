@@ -10,7 +10,7 @@ const Topnavbar = () => {
     <div>
       {isOpen && (
         <div className="bg-ascent-3 py-2 relative">
-          <div className="flex items-center justify-center  gap-1">
+          <div className="text-center px-6 sm:px-0 sm:flex items-center justify-center  gap-1">
             <p className="text-[10px] sm:text-sm text-dark-dark-2 font-light">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
             </p>

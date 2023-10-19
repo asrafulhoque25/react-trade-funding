@@ -6,11 +6,29 @@
 .play-button {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 47%;
     transform: translate(-50% -50%);
 
 }
 
 .play-button img {
     width: 142px;
+}
+
+@media (max-width: 991px) {
+    .play-button img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .play-button img {
+        width: 60px;
+    }
+
+    .play-button {
+        left: 45%;
+        transform: translate(-50% -50%);
+
+    }
 }

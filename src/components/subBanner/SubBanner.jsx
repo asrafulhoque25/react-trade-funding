@@ -12,9 +12,9 @@ const SubBanner = ({ title, bannerDesc, bannerImg, addRowClass, isContact, isCon
     <div className=''>
       <div className="subBanner">
         <div className="container">
-          <div className={` ${addRowClass} flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center pt-[120px] pb-[120px]`}>
+          <div className={` ${addRowClass} flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 items-center pt-[120px] pb-[80px] lg:pb-[120px]`}>
             <div className='bannerContent'>
-              <h1 className='text-[36px] md:text-[46px] lg:text-[56px] text-dark-dark-1 font-normal leading-[1.25] mb-6'>
+              <h1 className='text-[32px] md:text-[42px] lg:text-[56px] text-dark-dark-1 font-normal leading-[1.25] mb-6'>
                 {title}
               </h1>
               <p className='text-dark-dark-2 text-[20px]  mb-10'>
@@ -29,10 +29,10 @@ const SubBanner = ({ title, bannerDesc, bannerImg, addRowClass, isContact, isCon
 
             {/* style={{ backgroundImage: `url(${FooterBg})`, backgroundSize: 'cover' }} */}
             {isContactForm &&
-              <div className="contact-wrapper p-10" style={{ backgroundImage: `url(${contactFromBg})`, backgroundSize: 'cover' }}>
+              <div className="contact-wrapper p-4 lg:p-10" style={{ backgroundImage: `url(${contactFromBg})`, backgroundSize: 'cover' }}>
                 <div className='contactForm bg-white p-6 radius-lg max-w-[582px] m-auto'>
                   <div className="form-heading mb-6">
-                    <h3 className='text-dark-dark-1 text-[32px] font-normal'>Get a quote</h3>
+                    <h3 className='text-dark-dark-1 text-[25px] lg:text-[32px] font-normal'>Get a quote</h3>
                     <p className='text-dark-dark-3 text-base font-light'>
                       Dont like Filling up forms ? Mail us on <a href="mailto:support@tradefunding.au" className='text-primary-main'>support@tradefunding.au</a>
                     </p>

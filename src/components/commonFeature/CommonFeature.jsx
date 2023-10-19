@@ -31,18 +31,18 @@ const CommonFeature = ({
           {featureData?.map((data, index) => (
             <div
               key={index}
-              className={` ${sectionCls} lg:flex gap-14 items-center pb-[120px]`}
+              className={` ${sectionCls} lg:flex gap-14 items-center pb-[80px] lg:pb-[120px]`}
             >
-              <div className="featured-img w-full">
+              <div className="featured-img w-full flex justify-center lg:block">
                 <img src={data.FeatureImg} alt="featured image" />
               </div>
               <div className="featured-info w-full">
                 {!isCount && <span className="featured-count"></span>}
-                <h3 className="featured-title text-[48px] text-dark-dark-1 font-normal mb-3">
+                <h3 className="featured-title text-[30px] sm:text-[35px] lg:text-[48px] text-dark-dark-1 font-normal mb-3">
                   {data.featuredTitle}
                 </h3>
                 <p
-                  className={`featured-intro text-dark-dark-3 text-[24px] ${
+                  className={`featured-intro text-dark-dark-3 text-[18px] lg:text-[24px] ${
                     fontBold ? "font-bold" : "font-light"
                   }`}
                 >

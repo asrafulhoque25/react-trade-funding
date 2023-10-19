@@ -78,10 +78,10 @@ const GrowSave = ({ addClass, isHome, iconClass, secTitle, bgColor }) => {
       <div className="container">
         <div className="common-title mx-auto mb-6" style={{ maxWidth: "870px" }}>
           {isHome && <h2
-            className=" text-dark-dark-1 text-[48px]"
+            className=" text-dark-dark-1 text-center text-[30px] sm:text-[35px] lg:text-[48px]"
             dangerouslySetInnerHTML={{ __html: Data.heading }}
           /> || <div className="">
-              <h2 className="text-dark-dark-1 text-[48px] text-center">{secTitle}</h2>
+              <h2 className="text-dark-dark-1 text-center text-[30px] sm:text-[35px] lg:text-[48px]">{secTitle}</h2>
               <p className="text-center text-dark-dark-3 mb-10">I want to…</p>
           </div>
           }
@@ -112,7 +112,7 @@ const GrowSave = ({ addClass, isHome, iconClass, secTitle, bgColor }) => {
             <Tab.Panels className="mt-2">
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel key={idx}>
-                  <div className="grid grid-cols-4 gap-[30px] justify-between align-top">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] sm:justify-between align-top">
                     {posts.map((post) => (
                       <a href=""
                         className={`${addClass} relative group transition-all bg-white text-center py-[40px] px-4 rounded-s-[24px] rounded-br-[24px] shadow-black_sw`}
