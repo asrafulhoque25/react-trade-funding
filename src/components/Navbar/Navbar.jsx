@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import Topnavbar from "./Topnavbar";
 import arrow_down from "/assets/img/arrow_down.svg";
@@ -16,6 +16,7 @@ const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const ref = useRef();
   const toggleDropdown = () => {
     setToggle(!toggle);
   };
@@ -52,6 +53,26 @@ const Navbar = () => {
   //     {link:"Home",path:"home"}
   // ]
 
+
+  // for dropdown outside click to hide
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  }, []);
+
+
+
+
+
   const [showProductDropdown, setShowProductDropdown] = useState(false)
 
   const mobileDropdown = () => {
@@ -84,7 +105,7 @@ const Navbar = () => {
                     About
                   </Link>
                 </li>
-                <li
+                <li ref={ref}
                   className="navbar-dropdown text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold cursor-pointer"
                   onClick={menuDropdown} >
                   Products{" "}
@@ -203,7 +224,7 @@ const Navbar = () => {
           {/* for mobile menu */}
           <nav className="nav-for-mobile">
             {!showProductDropdown && <div className="mobile-nav-wrapper flex items-center gap-6 justify-between py-[20px]">
-              <Link>
+              <Link to={"/"}>
                 <img src={mobilelogo} alt="logo" />
               </Link>
               <Link onClick={toggleDropdown}>
