@@ -24,7 +24,13 @@ const Navbar = () => {
     setShowDropdown(!showDropdown);
   };
 
-
+  const closeMenu = () => {
+    setToggle(false);
+  };
+  const closeProductDropdown = () => {
+    setShowProductDropdown(false);
+    setToggle(false);
+  };
 
   const toggleMenu = () => {
     setToggle(!toggle);
@@ -64,7 +70,7 @@ const Navbar = () => {
               </Link>
               <ul className="flex space-x-11 items-center">
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/"}
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
                   >
@@ -72,7 +78,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/about"}
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold" >
                     About
@@ -83,14 +89,14 @@ const Navbar = () => {
                   onClick={menuDropdown} >
                   Products{" "}
                   <span className=" inline-flex ps-1">
-                    <img src={arrow_down} alt="" />
+                    <img src={arrow_down} alt="icon" />
                   </span>
                   {showDropdown && (
                     <div className="dropdown-content">
                       <img
                         src={topArrow}
                         className="absolute -top-3 left-1/2 -translate-x-1/2"
-                        alt=""
+                        alt="icon"
                       />
                       <div>
                         {/* <Link className="flex items-center justify-between text-[#FF5E5A] font-normal ">
@@ -156,7 +162,7 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/partners"}
                     href="#"
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
@@ -165,7 +171,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/contact"}
                     href="#"
                     className=" text-dark-dark-1 text-base transition-all hover:text-primary-main font-bold"
@@ -188,11 +194,13 @@ const Navbar = () => {
                   Join
                 </a>
                 <a href="#">
-                  <img src={bar} alt="" />
+                  <img src={bar} alt="icon" />
                 </a>
               </div>
             </div>
           </nav>
+
+          {/* for mobile menu */}
           <nav className="nav-for-mobile">
             {!showProductDropdown && <div className="mobile-nav-wrapper flex items-center gap-6 justify-between py-[20px]">
               <Link>
@@ -205,7 +213,7 @@ const Navbar = () => {
             {toggle && <div className=" flex flex-col justify-between w-full  h-[86vh] py-6">
               <ul className={`mobile-menu-items list-none flex flex-col gap-y-3 ${showProductDropdown && "hidden"}`}>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/"}
                     className=" text-dark-dark-2 text-base transition-all hover:text-primary-main font-bold d-block "
                   >
@@ -213,7 +221,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/about"}
                     className=" text-dark-dark-2 text-base transition-all hover:text-primary-main font-bold d-block "
                   >
@@ -247,7 +255,7 @@ const Navbar = () => {
                             <p className="pb-[10px] mt-[20px] border-b border-b-[#8E97A6] text-dark-dark-1 text-base font-normal ">
                               Grow
                             </p>
-                            <Link to={"/businessloans"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
+                            <Link onClick={closeMenu} to={"/businessloans"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
                               Business loans
                               <span className="">
                                 {/* <img src={cornerArrow} className="" alt="" /> */}
@@ -272,7 +280,7 @@ const Navbar = () => {
                             <p className="pb-[10px] mt-[20px] border-b border-b-[#8E97A6] text-dark-dark-1 text-base font-normal ">
                               Save
                             </p>
-                            <Link to={"/Payments"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
+                            <Link onClick={closeMenu} to={"/Payments"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
                               Business payments
                               <span className="">
                                 {/* <img src={cornerArrow} className="" alt="" /> */}
@@ -299,7 +307,7 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <Link
+                  <Link onClick={closeMenu}
                     to={"/partners"}
                     href="#"
                     className=" text-dark-dark-2 text-base transition-all hover:text-primary-main font-bold d-block "
@@ -308,12 +316,12 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to={"/blog"}
+                  <Link onClick={closeMenu}
+                    to={"/contact"}
                     href="#"
                     className=" text-dark-dark-2 text-base transition-all hover:text-primary-main font-bold d-block "
                   >
-                    Blog
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -328,7 +336,7 @@ const Navbar = () => {
                       <p className="pb-[10px] mt-[20px] border-b border-b-[#8E97A6] text-dark-dark-1 text-base font-normal ">
                         Grow
                       </p>
-                      <Link to={"/businessloans"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
+                      <Link onClick={closeProductDropdown} to={"/businessloans"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
                         Business loans
                         <span className="">
                           {/* <img src={cornerArrow} className="" alt="" /> */}
@@ -353,7 +361,7 @@ const Navbar = () => {
                       <p className="pb-[10px] mt-[20px] border-b border-b-[#8E97A6] text-dark-dark-1 text-base font-normal ">
                         Save
                       </p>
-                      <Link to={"/Payments"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
+                      <Link onClick={closeProductDropdown} to={"/Payments"} className="flex link-dropdown items-center justify-between text-dark-dark-1 text-sm font-normal transition-all hover:text-primary-main py-[12px] cursor-pointer">
                         Business payments
                         <span className="">
                           {/* <img src={cornerArrow} className="" alt="" /> */}
@@ -393,11 +401,8 @@ const Navbar = () => {
               </div>
             </div>}
 
-
-
-
-
           </nav>
+          {/* for mobile menu */}
         </div>
       </header>
 

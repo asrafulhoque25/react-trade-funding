@@ -17,7 +17,7 @@ const Topnavbar = () => {
             <a className=" text-[10px] sm:text-sm text-dark-dark-2 font-light underline" href="" >  Read more </a>
           </div>
           <button className=" absolute right-4 top-3" onClick={handleClose}>
-            <img src={cross} alt="" />
+            <img src={cross} alt="icon" />
           </button>
         </div>
       )}

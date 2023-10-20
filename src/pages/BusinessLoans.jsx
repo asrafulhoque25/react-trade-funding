@@ -32,7 +32,7 @@ const BusinessLoans = () => {
         BusinessLoans={true}
       />
       <Breadcrumb routeName={routeName} />
-      <BringingExperience />
+      <BringingExperience secBgColor={'bgOffWhite'} />
       <GrowSave
         bgColor={'growSaveBusinessLoansBg'}
         addClass={'text-start'}
